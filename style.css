@@ -5,8 +5,138 @@
     box-sizing: border-box;
 }
 
+/* Font Inter */
+.inter {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Body section */
 body{
-    display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg #121120 #4B495A);
+    background-color:#121120;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+/* NavBar */
+
+nav{
+    margin-top: 20px;
+    background-color: #ffff;
+    height: 10px;
+    padding: 5px 9px;
+    height: max-content;
+    width: max-content;
+    border-radius: 30px;
+    color: #F5F5F5;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav img{
+    height: 50px;
+    width: 50px;
+    margin-right: 8vw;
+    border-radius: 100px;
+    color: white;
+    /* box-shadow: 0px 0px 50px #000000; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav a{
+    color: #737373;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+nav button{
+    border: none;
+    background-color: #c3c3c3;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: #737373;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0;
+    margin-left: 4vw;
+}
+
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    padding: 1.3vw 15vw;
+    color: #121120;
+    justify-content: space-between;
+}
+
+footer div{
+    display: flex;
+    gap: 5px;
+}
+
+footer p{
+    color: #121120;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+footer a{
+    color: #FF512F;
+}
+
+footer span{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 2.5px solid;
+    border-color: #121120;
+}
+
+.footer-svg-insta{
+    transform: scale(0.8);
+}
+
+.footer-svg-linkden{
+    transform: scale(0.47);
+}
+
+.footer-svg-github{
+    transform: scale(0.6);
+}
+
+
+
+/* Animations */
+
+/* NavBar */
+nav a:hover{
+    font-weight: 700;
+}
+
+nav button:hover{
+    color: #fff;
+    background-color: #737373;
+    font-weight: 500;
+}
+
+footer a:hover{
+    color: #bc1f00;
+}
+
+footer span:hover{
+    background-color: #FF512F;
 }
