@@ -267,9 +267,14 @@ a{
 
 .Languages_tools_container>div{
     width: 100%;
-    margin-top: 25px;
+}
+
+.Languages_tools_container>div>div{
+    width: 100%;
+    /* margin-top: 25px; */
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .Languages_tools_container>div>span>h6{
